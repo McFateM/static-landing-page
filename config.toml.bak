@@ -9,7 +9,7 @@ custom_css = "local.css"
 googleAnalytics = "UA-131150861-3"
 
 [params]
-  build = 5
+  buildDate = '2020-01-30 10:42'
   tagline = "Welcome to the static.Grinnell.edu landing page at Grinnell College!"
   abstract = "This landing page is designed solely to provide navigation to the sites/services listed below."
 
