@@ -1,21 +1,35 @@
-baseurl = "https://static.grinnell.edu/"
+baseURL = "https://static.grinnell.edu/"
+languageCode = "en-US"
 title = "static.Grinnell.edu"
-author = "Mark A. McFate"
-canonifyurls = true
-paginate = 3
-
-theme = "hugo-theme-lean-launch-page"
-custom_css = "local.css"
+theme = "bootstrap-bp-hugo-startpage"
 googleAnalytics = "UA-131150861-3"
+copyright = "Mark A. McFate"
+enableRobotsTXT = true
+pygmentsCodeFences = true
+canonifyurls = true
+paginate = 5
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+[permalinks]
+  posts = "/:year/:month/:slug/"
+  post = "/:year/:month/:slug/"
+  pages = "/:slug/"
+  page = "/:slug/"
+
+[Author]
+  name = "Mark A. McFate"
 
 [params]
-  buildDate = '2020-01-30 11:05'
-  tagline = "Welcome to the static.Grinnell.edu landing page at Grinnell College!"
-  abstract = "This landing page is designed solely to provide navigation to the sites/services listed below."
+  description = "Welcome to the static.Grinnell.edu landing page at Grinnell College!"
+  #images = ["logo.jpg"]
+  startPageColumns = true
+  welcomeText = "This landing page is designed solely to provide navigation to the sites/services listed below."
+  buildDate = '2020-01-30 16:36'
 
-  # mailchimpURL = "//my-account.mailchimp.com/my-subscriber-url"
-  #
-  # twitter = "https://twitter.com/MyNewProduct"
-  # facebook = "https://facebook.com/MyNewProduct"
-  # instagram = "https://instagram.com/MyNewProduct"
-  # googleplus = "https://plus.google.com/+MyNewProduct"
+[[params.searchEngines]]
+  name = "Google"
+  activated = true
+  url = "https://www.google.com/search"

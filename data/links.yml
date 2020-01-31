@@ -1,0 +1,44 @@
+---
+- group: Static Sites @ Grinnell College
+  items:
+    - title: Visualizing Abolition and Freedom
+      icon: fas fa-th
+      url: https://vaf.grinnell.edu/
+      description: The _Visualizing Abolition and Freedom_ site relates to an installation of public art located at the north end of the ground floor atrium in the _Humanities and Social Sciences Center_ (HSSC) at Grinnell College.
+    - title: The Digital Library Application Developer's Blog
+      icon: fas fa-edit
+      url: https://static.grinnell.edu/blogs/McFateM/
+      description: Mark's first Hugo site, a blog, at the new static.Grinnell.edu.
+    - title: Rootstalk - A Prairie Journal of Culture, Science, and the Arts
+      icon: fab fa-pagelines
+      url: https://rootstalk-static.grinnell.edu/
+      description: Development copy of "Rootstalk - A Prairie Journal of Culture, Science, and the Arts"
+    - title: Visualizing Abolition and Freedom - Kiosk Version
+      icon: fas fa-th
+      url: https://vaf-kiosk.grinnell.edu/
+      description: This is a link to the "kiosk version" of the _Visualizing Abolition and Freedom_ site.  It's essentially the same as the other/public site, but without links to _Digital Grinnell_, and is intended to run on a mobile device adjacent to the art installation inside the _Humanities and Social Sciences Center_ (HSSC).
+---
+
+## Elements below are effectively disabled...they appear after the close (---) of the YAML data.
+- group: Social Media
+    - title: Facebook
+      url: https://www.facebook.com
+      icon: fab fa-facebook
+    - title: Instagram
+      url: https://www.instagram.com
+      icon: fab fa-instagram
+    - title: Spotify
+      url: https://www.spotify.com
+      icon: fab fa-spotify
+- group: Development
+  items:
+    - title: Confluence
+      url: https://www.atlassian.com/software/confluence
+      icon: fab fa-confluence
+    - title: GitHub
+      url: https://github.com/McFateM/
+      icon: fab fa-github
+- group: eCommerce
+    - title: Amazon
+      url: https://www.amazon.com
+      icon: fab fa-amazon
