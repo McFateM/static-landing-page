@@ -1,8 +1,8 @@
 {{ define "main" }}
 
-<h1 class="welcomeText"><strong>{{ .Site.Title }}</strong></h1>
-<h2 class="welcomeText">{{ .Site.Params.description }}</h2>
-<p class="welcomeText">{{ .Site.Params.welcomeText }}</p>
+<h1 class="site-banner">{{ .Site.Title }}</h1>
+<h2 class="site-description">{{ .Site.Params.description }}</h2>
+<p class="site-welcome-text">{{ .Site.Params.welcomeText }}</p>
 
 {{ if .Site.Params.searchEngines }}
     {{ range .Site.Params.searchEngines }}
@@ -19,10 +19,10 @@
         {{ range .Site.Data.links }}
             <div id="groupListEntry" class="card">
                 <div class="card-body">
-                    <h3 class="card-title groupTitle">{{ .group }}</h3>
+                    <span class="card-title groupTitle">{{ .group }}</span>
                     <ul class="list-group list-group-flush groupListList">
                         {{ range .items }}
-                            <a href="{{ .url }}" target="_blank" class="groupLink"><div class="list-group-item groupListListItem"><h4><i class="{{ .icon }}"></i>&nbsp;&nbsp<span class="groupText">{{ .title | safeHTML }}</span></h4></div></a>
+                            <a href="{{ .url }}" target="_blank" class="groupLink"><div class="list-group-item groupListListItem"><h4><i class="{{ .icon }}"></i>&nbsp;&nbsp<span class="groupText">{{ .title | safeHTML }}</span></h4><span class="link-description"> {{ .description | markdownify | safeHTML }}</span></div></a>
                         {{ end }}
                     </ul>
                 </div>
