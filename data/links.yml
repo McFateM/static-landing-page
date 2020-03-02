@@ -17,6 +17,14 @@
       icon: fas fa-th
       url: https://vaf-kiosk.grinnell.edu/
       description: This is a link to the "kiosk version" of the _Visualizing Abolition and Freedom_ site.  It's essentially the same as the other/public site, but without links to _Digital Grinnell_, and is intended to run on a mobile device adjacent to the art installation inside the _Humanities and Social Sciences Center_ (HSSC).
+
+- group: OneTab Links
+  items:
+    - title: Mark's Essential/Daily GC Links
+      icon: fas fa-link
+      url: https://www.one-tab.com/page/I76JpNGiSnmzDzY1aFPg0w
+      description: Essential links pertinent to the _Digital Library Application Deveoloper_'s work at Grinnell College.
+
 ---
 
 ## Elements below are effectively disabled...they appear after the close (---) of the YAML data.
