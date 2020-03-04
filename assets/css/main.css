@@ -57,3 +57,11 @@ h1.site-banner {
   font-size: 28pt;
   font-weight: 600;
 }
+
+a {
+  color: #ff2327;
+}
+
+p.disclaimer {
+  margin-top: 10px;
+}
