@@ -9,25 +9,25 @@ services:
         - no-new-privileges:true
       networks:
         - proxy
-      # volumes:
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock:ro
       #   - /etc/localtime:/etc/localtime:ro
-      #   - /var/run/docker.sock:/var/run/docker.sock:ro
       #   - ./data:/data
       labels:
         - "traefik.enable=true"
         - "traefik.http.routers.landing-page.entrypoints=http"
-        - "traefik.http.routers.landing-page.rule=Host(`static.grinnell.edu`)"
-        # - "traefik.http.routers.landing-page.middlewares=landing-page-stripprefix"
-        # - "traefik.http.middlewares.landing-page-stripprefix.stripprefix.prefixes=/landing-page"
+        - "traefik.http.routers.landing-page.rule=Host(`static.grinnell.edu`) && PathPrefix(`/landing-page`)"
+        - "traefik.http.routers.landing-page.middlewares=landing-page-stripprefix"
+         - "traefik.http.middlewares.landing-page-stripprefix.stripprefix.prefixes=/landing-page"
         - "traefik.http.middlewares.landing-page-https-redirect.redirectscheme.scheme=https"
         - "traefik.http.routers.landing-page.middlewares=landing-page-https-redirect"
         - "traefik.http.routers.landing-page-secure.entrypoints=https"
-        - "traefik.http.routers.landing-page-secure.rule=Host(`static.grinnell.edu`)"
-        # - "traefik.http.routers.landing-page-secure.middlewares=landing-page-stripprefix"
+        - "traefik.http.routers.landing-page-secure.rule=Host(`static.grinnell.edu`) && PathPrefix('/landing-page')"
+        - "traefik.http.routers.landing-page-secure.middlewares=landing-page-stripprefix"
         - "traefik.http.routers.landing-page-secure.tls=true"
         - "traefik.http.routers.landing-page-secure.tls.certresolver=http"
         - "traefik.http.routers.landing-page-secure.service=static-landing-page"
-#        - "traefik.http.services.landing-page.loadbalancer.server.port=9000"
+        - "traefik.http.services.landing-page.loadbalancer.server.port=9000"
         - "traefik.docker.network=proxy"
 networks:
   proxy:
