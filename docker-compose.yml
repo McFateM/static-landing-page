@@ -25,6 +25,8 @@ services:
         - "traefik.http.routers.landing-secure.tls.certresolver=http"
         - "traefik.http.routers.landing-secure.service=landing_static-landing-page"
         - "traefik.docker.network=proxy"
+        - "com.centurylinklabs.watchtower.enable=true"
+
 networks:
   proxy:
     external: true
