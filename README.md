@@ -2,9 +2,9 @@
 
 This project defines the landing page for Grinnell's static.Grinnell.edu server.
 
-# Deploying this Site
+## Deploying this Site
 
-This site is intended to be deployed using my [dockerized-server](https://github.com/McFateM/dockerized-server) approach, and the command stream used to launch [the site](https://static.grinnell.edu/) on Grinnell College's `static.Grinnell.edu` server is:
+As of 30-Apr-2020, this site is intended to be deployed using my [docker-traefik2-host](https://github.com/McFateM/docker-traefik2-host) approach.  A `docker container run` command is no longer used to launch [the site](https://static.grinnell.edu/) on Grinnell College's `static.Grinnell.edu` server, so no more...
 
 ```
 NAME=static-landing-page
@@ -21,7 +21,28 @@ docker container run -d --name ${NAME} \
     ${IMAGE}
 ```
 
-# Local Development
+### Now Using Docker-Compose
+
+With the introduction of [Traefik v2.x](https://traefik.io) this site now relies solely on files, most importantly `docker-compose.yml`, and a single `docker-compose up -d` command, to execute a one-time application launch. On Grinnell's `static.grinnell.edu` server, after the host has been initailized (see [README.md](https://github.com/McFateM/docker-traefik2-host)), the whole command sequence, executed as _root_, looked like this:
+
+```
+sudo su
+cd /opt/containers
+git clone --recursive https://github.com/McFateM/static-landing-page
+cd static-landing-page
+docker-compose up -d
+```
+
+Since the above commands have already been run once, there should be no need to do it again. However, the pertinent portions of the process can now be specified like so:
+
+```
+sudo su
+cd /opt/containers/static-landing-page
+git pull  # assumes the git remote is origin -> https://github.com/McFateM/static-landing-page
+docker-compose up -d
+```
+
+## Local Development
 
 It is recommended that you clone (or fork and clone) this repository to an OS X workstation where [Hugo](https://gohugo.io) is installed and running an up-to-date version.
 
