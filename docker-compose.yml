@@ -11,8 +11,6 @@ services:
         - proxy
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock:ro
-      #   - /etc/localtime:/etc/localtime:ro
-      #   - ./data:/data
       labels:
         - "traefik.enable=true"
         - "traefik.http.routers.landing-page.entrypoints=http"
