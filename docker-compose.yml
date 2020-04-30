@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-    static-landing-page:
+    landing:
       image: mcfatem/static-landing:latest
-      container_name: static-landing-page
+      container_name: landing
       restart: unless-stopped
       security_opt:
         - no-new-privileges:true
@@ -12,21 +12,22 @@ services:
       volumes:
         - /etc/localtime:/etc/localtime:ro
         - /var/run/docker.sock:/var/run/docker.sock:ro
+        - ./data:/data
       labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.landing-page.entrypoints=http"
-        - "traefik.http.routers.landing-page.rule=Host(`static.grinnell.edu`) && PathPrefix(`/landing-page`)"
-        - "traefik.http.routers.landing-page.middlewares=landing-page-stripprefix"
-         - "traefik.http.middlewares.landing-page-stripprefix.stripprefix.prefixes=/landing-page"
-        - "traefik.http.middlewares.landing-page-https-redirect.redirectscheme.scheme=https"
-        - "traefik.http.routers.landing-page.middlewares=landing-page-https-redirect"
-        - "traefik.http.routers.landing-page-secure.entrypoints=https"
-        - "traefik.http.routers.landing-page-secure.rule=Host(`static.grinnell.edu`) && PathPrefix('/landing-page')"
-        - "traefik.http.routers.landing-page-secure.middlewares=landing-page-stripprefix"
-        - "traefik.http.routers.landing-page-secure.tls=true"
-        - "traefik.http.routers.landing-page-secure.tls.certresolver=http"
-        - "traefik.http.routers.landing-page-secure.service=static-landing-page"
-        - "traefik.http.services.landing-page.loadbalancer.server.port=9000"
+        - "traefik.http.routers.landing.entrypoints=http"
+        - "traefik.http.routers.landing.rule=Host(`static.grinnell.edu`) && PathPrefix(`/landing`)"
+        - "traefik.http.routers.landing.middlewares=landing-stripprefix"
+        - "traefik.http.middlewares.landing-stripprefix.stripprefix.prefixes=/landing"
+        - "traefik.http.middlewares.landing-https-redirect.redirectscheme.scheme=https"
+        - "traefik.http.routers.landing.middlewares=landing-https-redirect"
+        - "traefik.http.routers.landing-secure.entrypoints=https"
+        - "traefik.http.routers.landing-secure.rule=Host(`static.grinnell.edu`) && PathPrefix(`/landing`)"
+        - "traefik.http.routers.landing-secure.middlewares=landing-stripprefix"
+        - "traefik.http.routers.landing-secure.tls=true"
+        - "traefik.http.routers.landing-secure.tls.certresolver=http"
+        - "traefik.http.routers.landing-secure.service=landing"
+        - "traefik.http.services.landing.loadbalancer.server.port=9000"
         - "traefik.docker.network=proxy"
 networks:
   proxy:
