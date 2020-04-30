@@ -27,7 +27,7 @@ services:
         - "traefik.http.routers.landing-page-secure.tls=true"
         - "traefik.http.routers.landing-page-secure.tls.certresolver=http"
         - "traefik.http.routers.landing-page-secure.service=static-landing-page"
-        - "traefik.http.services.landing-page.loadbalancer.server.port=9000"
+#        - "traefik.http.services.landing-page.loadbalancer.server.port=9000"
         - "traefik.docker.network=proxy"
 networks:
   proxy:
