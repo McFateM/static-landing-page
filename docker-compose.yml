@@ -15,10 +15,6 @@ services:
         - ./data:/data
       labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.landing.entrypoints=http"
-        - "traefik.http.routers.landing.rule=Host(`static.grinnell.edu`)"
-        - "traefik.http.middlewares.landing-https-redirect.redirectscheme.scheme=https"
-        - "traefik.http.routers.landing.middlewares=landing-https-redirect"
         - "traefik.http.routers.landing-secure.entrypoints=https"
         - "traefik.http.routers.landing-secure.rule=Host(`static.grinnell.edu`)"
         - "traefik.http.routers.landing-secure.tls=true"
