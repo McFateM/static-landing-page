@@ -18,7 +18,7 @@ services:
       - "traefik.http.routers.landing-secure.entrypoints=https"
       - "traefik.http.routers.landing-secure.rule=Host(`static.grinnell.edu`)"
       - "traefik.http.routers.landing-secure.tls=true"
-      - "traefik.http.routers.landing-secure.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.landing-secure.tls.certresolver=myresolver"
       - "traefik.http.routers.landing-secure.service=landing_static-landing-page"
       - "traefik.docker.network=proxy"
       - "com.centurylinklabs.watchtower.enable=true"
