@@ -3,7 +3,7 @@ version: '3'
 services:
   landing:
     image: mcfatem/static-landing:latest
-    container_name: landing
+    container_name: landing-page
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
@@ -20,7 +20,7 @@ services:
       - "traefik.http.routers.landing-secure.rule=Host(`static.grinnell.edu`)"
       - "traefik.http.routers.landing-secure.tls=true"
       - "traefik.http.routers.landing-secure.tls.certresolver=http"
-      - "traefik.http.routers.landing-secure.service=landing_static-landing-page"
+      - "traefik.http.routers.landing-secure.service=landing-page"
       - "com.centurylinklabs.watchtower.enable=true"
 
 networks:
