@@ -20,7 +20,7 @@ services:
       - "traefik.http.routers.landing-secure.rule=Host(`static.grinnell.edu`)"
       - "traefik.http.routers.landing-secure.tls=true"
       - "traefik.http.routers.landing-secure.tls.certresolver=http"
-      - "traefik.http.routers.landing-secure.service=landing-page"
+      - "traefik.http.routers.landing-secure.service=static-landing-page_landing-page"
       - "com.centurylinklabs.watchtower.enable=true"
 
 networks:
