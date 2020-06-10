@@ -11,8 +11,12 @@
       description: Mark's new (as of March 10, 2020) professional blog.
     - title: Rootstalk - A Prairie Journal of Culture, Science, and the Arts
       icon: fab fa-pagelines
-      url: https://rootstalk-static.grinnell.edu/
-      description: Development copy of "Rootstalk - A Prairie Journal of Culture, Science, and the Arts"
+      url: https://rootstalk.grinnell.edu/
+      description: The NEW "Rootstalk - A Prairie Journal of Culture, Science, and the Arts"
+    - title: Rootstalk Archives - Past Issues of the Prairie Journal
+      icon: fab fa-pagelines
+      url: https://rootstalk-archives.grinnell.edu/
+      description: The old "Rootstalk - A Prairie Journal of Culture, Science, and the Arts"
     - title: Visualizing Abolition and Freedom - Kiosk Version
       icon: fas fa-th
       url: https://vaf-kiosk.grinnell.edu/
