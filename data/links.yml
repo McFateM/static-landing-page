@@ -13,9 +13,9 @@
       icon: fab fa-pagelines
       url: https://rootstalk.grinnell.edu/
       description: The NEW "Rootstalk - A Prairie Journal of Culture, Science, and the Arts"
-    - title: Rootstalk Archives - Past Issues of the Prairie Journal
+    - title: Rootstalk Archive - Past Issues of the Prairie Journal
       icon: fab fa-pagelines
-      url: https://rootstalk-archives.grinnell.edu/
+      url: https://rootstalk-archive.grinnell.edu/
       description: The old "Rootstalk - A Prairie Journal of Culture, Science, and the Arts"
     - title: Visualizing Abolition and Freedom - Kiosk Version
       icon: fas fa-th
