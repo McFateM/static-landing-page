@@ -10,7 +10,8 @@ current=`git symbolic-ref --short -q HEAD`
 git checkout ${current}
 
 # Compile the site before copying to the new image
-hugo --ignoreCache --ignoreVendor --minify --debug --verbose
+hugo --ignoreCache --minify --debug --verbose
+# hugo --ignoreCache --ignoreVendor --minify --debug --verbose
 echo "Hugo compilation is complete."
 
 # Build a new Docker image
