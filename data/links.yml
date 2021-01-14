@@ -9,10 +9,6 @@
       icon: fas fa-edit
       url: https://static.grinnell.edu/blogs/McFateM/
       description: Mark's old (prior to March 10, 2020) and NEW (as of June 25, 2020) professional blog.
-    - title: The "Interim" Digital Library Application Developer's Blog
-      icon: fas fa-hand-paper
-      url: https://dlad.summittdweller.com
-      description: Mark's interim (from March 10 to June 24, 2020) professional blog.
     - title: Rootstalk - A Prairie Journal of Culture, Science, and the Arts
       icon: fab fa-pagelines
       url: https://rootstalk.grinnell.edu/
@@ -25,6 +21,10 @@
       icon: fas fa-th
       url: https://vaf-kiosk.grinnell.edu/
       description: This is a link to the "kiosk version" of the _Visualizing Abolition and Freedom_ site.  It's essentially the same as the other/public site, but without links to _Digital Grinnell_, and is intended to run on a mobile device adjacent to the art installation inside the _Humanities and Social Sciences Center_ (HSSC).
+    - title: OneTab Links from the January 2021 ICG Virtual Hackdoc
+      icon: fas fa-hand-paper
+      url: https://www.one-tab.com/page/viFgpfW2TN20hzsG8h67fQ
+      description: Just what the name says.
 
 - group: OneTab Links
   items:

@@ -2,8 +2,7 @@ baseURL = "https://static.grinnell.edu/"
 languageCode = "en-US"
 title = "static.Grinnell.edu"
 theme = "bootstrap-bp-hugo-startpage"
-# googleAnalytics = "UA-131150861-3"
-googleAnalytics = "G-GV9ZQKJGJH"
+googleAnalytics = "UA-4766052-13"
 copyright = "Mark A. McFate"
 enableRobotsTXT = true
 pygmentsCodeFences = true
@@ -28,7 +27,7 @@ paginate = 5
   #images = ["logo.jpg"]
   startPageColumns = true
   welcomeText = "This landing page is designed solely to provide navigation to the sites/services listed below."
-  buildDate = '2020-06-30 15:17'
+  buildDate = '2021-01-13 15:16'
 
 [[params.searchEngines]]
   name = "Google"
