@@ -21,10 +21,6 @@
       icon: fas fa-th
       url: https://vaf-kiosk.grinnell.edu/
       description: This is a link to the "kiosk version" of the _Visualizing Abolition and Freedom_ site.  It's essentially the same as the other/public site, but without links to _Digital Grinnell_, and is intended to run on a mobile device adjacent to the art installation inside the _Humanities and Social Sciences Center_ (HSSC).
-    - title: OneTab Links from the January 2021 ICG Virtual Hackdoc
-      icon: fas fa-hand-paper
-      url: https://www.one-tab.com/page/viFgpfW2TN20hzsG8h67fQ
-      description: Just what the name says.
 
 - group: OneTab Links
   items:
@@ -48,6 +44,14 @@
       icon: fas fa-robot
       url: https://www.one-tab.com/page/KAxHlFFnQESHW8Ec-4zNKg
       description: Really just practicing here.  I saved a Firefox session of 4 tabs related to _ISLE Automated Testing_ using [OneTab](https://www.one-tab.com/).  Now, I should be able to click the associated link to recover my session!
+    - title: OneTab Links from the January 2021 ICG Virtual Hackdoc
+      icon: fas fa-hand-paper
+      url: https://www.one-tab.com/page/viFgpfW2TN20hzsG8h67fQ
+      description: Just what the name says.
+    - title: LASIR Implementation Resources
+      icon: fas fa-graduation-cap
+      url: https://www.one-tab.com/page/xTjxMeRsSMyx8wl4eglckA
+      description: Just what the name says.
 ---
 
 ## Elements below are effectively disabled...they appear after the close (---) of the YAML data.
