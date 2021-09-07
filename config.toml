@@ -1,4 +1,4 @@
-baseURL = "https://static.grinnell.edu/"
+# baseURL = "https://static.grinnell.edu/"
 languageCode = "en-US"
 title = "static.Grinnell.edu"
 theme = "bootstrap-bp-hugo-startpage"
@@ -27,7 +27,7 @@ paginate = 5
   #images = ["logo.jpg"]
   startPageColumns = true
   welcomeText = "This landing page is designed solely to provide navigation to the sites/services listed below."
-  buildDate = '2021-01-14 14:00'
+  buildDate = '2021-09-07 16:38'
 
 [[params.searchEngines]]
   name = "Google"

@@ -27,7 +27,7 @@ paginate = 5
   #images = ["logo.jpg"]
   startPageColumns = true
   welcomeText = "This landing page is designed solely to provide navigation to the sites/services listed below."
-  buildDate = '2021-01-13 15:16'
+  buildDate = '2021-01-14 14:00'
 
 [[params.searchEngines]]
   name = "Google"
